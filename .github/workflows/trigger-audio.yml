@@ -1,0 +1,17 @@
+name: Trigger Audio Playback
+
+on:
+  repository_dispatch:
+    types: [play_audio]
+
+jobs:
+  play-audio:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Trigger website update
+      run: |
+        curl -X POST  https://oxyo578.github.io/oxyo578-github.io/play-audio
