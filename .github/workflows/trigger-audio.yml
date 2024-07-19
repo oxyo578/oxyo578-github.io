@@ -14,4 +14,4 @@ jobs:
 
     - name: Trigger website update
       run: |
-        curl -X POST  https://oxyo578.github.io/oxyo578-github.io/play-audio
+        curl -X POST  https://oxyo578.github.io/oxyo578-github.io
